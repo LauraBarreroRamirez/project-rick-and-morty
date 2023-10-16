@@ -12,14 +12,19 @@ function Tarjetas() {
 
     useEffect(() => {
         fetchData();
-    }, [])
+    }, []);
+
     return (
       <div className={s.container}>
         <h1 className={s.titulo}>Tarjetas</h1>
         <div className={s.card}>
             <ul>
-                {personajes?.map((personaje) => (<li key={personaje.name}>{personaje.name}</li>))}
-                {personajes?.map((personaje) => (<li key={personaje.image}>{personaje.image}</li>))}
+                {personajes && personajes.length > 0 && personajes.map((personaje, index) => (
+                  <li key={personaje.id}>
+                    {personaje.name} {personaje.image} {personaje.gender} 
+                    {/* {personaje.location} */}
+                  </li>),
+                )}            
             </ul>
         </div>
         <div>
