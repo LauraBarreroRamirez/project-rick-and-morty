@@ -8,6 +8,9 @@
   max-width: 1200px;
   padding: 0 1rem;
 }
+.titulo{
+  margin: 50px;
+}
 .button{
     text-decoration: none;
     color: #fff;
