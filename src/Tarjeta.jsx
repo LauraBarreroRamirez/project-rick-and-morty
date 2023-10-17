@@ -1,7 +1,5 @@
 function Tarjeta ({info}){
 
-    console.log(info)
-
     return (
         <div className="card">
             <div className="card-body">

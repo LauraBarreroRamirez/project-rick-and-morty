@@ -9,22 +9,22 @@
   padding: 0 1rem;
 }
 .titulo{
-  margin: 50px;
+  margin: 50px
 }
 .button{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0 1rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.5rem;
-    background-color: #000;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      background-color: #fff;
-      color: #000;
-    }
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 50px;
+  padding: 0.3rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #000;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
 } 
 
 
