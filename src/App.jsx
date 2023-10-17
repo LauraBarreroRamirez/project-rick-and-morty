@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import Tarjetas from "./Tarjetas.jsx";
 import ImagenHome from "./assets/portal.gif";
 import ImagenTitulo from "./assets/titulo.png";
 import s from "./App.module.css";

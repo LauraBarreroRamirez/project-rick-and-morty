@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import s from "./Tarjetas.module.css";
 import Tarjeta from "./Tarjeta.jsx";
 import axios from "axios";
@@ -37,7 +38,6 @@ function Tarjetas() {
     const irAlFinal = () => {
       setPage(maxPage.current)
     }
-    console.log("me reenderice")
     return (
       <div className={s.container}>
         <h1 className={s.titulo}>Personajes</h1>
@@ -51,11 +51,11 @@ function Tarjetas() {
         <div>
         {/* <button className={s.button}>Show more</button> */}
         <button
-          className="btn btn-primary"
+          className="btn btn-primary my-4 mx-2"
           onClick={irAlPrincipio}
-        >ir al principio</button>
+        >Ir al principio</button>
         <button 
-          className="btn btn-primary"
+          className="btn btn-primary my-4 mx-2"
           onClick={disminuirPagina}
         >
           Anterior
@@ -63,17 +63,18 @@ function Tarjetas() {
         <span>{page} - </span>
         <span>{maxPage.current}</span>
         <button 
-          className="btn btn-primary"
+          className="btn btn-primary my-4 mx-2"
           onClick={aumentarPagina}
         >
           Siguiente
         </button>
         <button
-          className="btn btn-primary"
+          className="btn btn-primary my-4 mx-2"
           onClick={irAlFinal}
         >
-          ir al final
+          Ir al final
         </button>
+        <Link to="/" className={s.LinkApp}>Ir al Inicio</Link>
         </div>
       </div>
     );
